@@ -12,4 +12,7 @@ Route::prefix('link/{token}')->middleware([TokenMiddleware::class])->group(stati
     Route::get('/', [DashboardController::class, 'index'])->name('link');
     Route::post('/regenerate', [DashboardController::class, 'regenerate'])->name('link.regenerate');
     Route::post('/deactivate', [DashboardController::class, 'deactivate'])->name('link.deactivate');
+
+    Route::post('/draw', [DashboardController::class, 'draw'])->name('draw');
+    Route::get('/history', [DashboardController::class, 'history'])->name('history');
 });

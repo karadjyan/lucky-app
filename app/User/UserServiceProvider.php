@@ -2,6 +2,8 @@
 
 namespace App\User;
 
+use App\User\Repositories\UserDrawRepository;
+use App\User\Repositories\UserDrawRepositoryInterface;
 use App\User\Repositories\UserLinkRepository;
 use App\User\Repositories\UserLinkRepositoryInterface;
 use App\User\Repositories\UserRepository;
@@ -16,6 +18,7 @@ class UserServiceProvider extends ServiceProvider
     {
         $this->app->bind(UserRepositoryInterface::class, UserRepository::class);
         $this->app->bind(UserLinkRepositoryInterface::class, UserLinkRepository::class);
+        $this->app->bind(UserDrawRepositoryInterface::class, UserDrawRepository::class);
         $this->app->bind(TokenGeneratorInterface::class, SimpleTokenGenerator::class);
     }
 }

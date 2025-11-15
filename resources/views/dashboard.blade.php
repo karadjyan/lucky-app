@@ -22,5 +22,17 @@
                 Deactivate Link
             </button>
         </form>
+
+        <form action="{{ route('draw', request()->route('token')) }}" method="POST">
+            @csrf
+            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                ImFeelingLucky
+            </button>
+        </form>
+
+        <a href="{{ route('history', request()->route('token')) }}"
+           class="inline-block bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-800">
+            History
+        </a>
     </div>
 @endsection
