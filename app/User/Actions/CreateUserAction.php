@@ -18,7 +18,7 @@ final readonly class CreateUserAction
         private UserLinkFactory $userLinkFactory
     ){}
 
-    public function execute(UserDto $dto)
+    public function execute(UserDto $dto): UserLinkDto
     {
         try {
             $user = $this->userRepository->createOrFind($dto);
