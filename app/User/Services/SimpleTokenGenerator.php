@@ -6,7 +6,6 @@ use Random\RandomException;
 
 class SimpleTokenGenerator implements TokenGeneratorInterface
 {
-
     /**
      * @throws RandomException
      */

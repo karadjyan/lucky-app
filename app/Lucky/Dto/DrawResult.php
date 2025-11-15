@@ -8,5 +8,5 @@ final readonly class DrawResult
         public string $number,
         public string $isWin,
         public string $bonus,
-    ){}
+    ) {}
 }

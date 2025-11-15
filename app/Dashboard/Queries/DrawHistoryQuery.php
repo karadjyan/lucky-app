@@ -10,7 +10,7 @@ final class DrawHistoryQuery
     public function __construct(
         private UserLinkRepositoryInterface $userLinkRepository,
         private UserDrawRepositoryInterface $userDrawRepository
-    ){}
+    ) {}
 
     public function fetch(DrawHistoryCriteria $criteria): array
     {

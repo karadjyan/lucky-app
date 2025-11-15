@@ -11,7 +11,7 @@ class UserDraw extends Model
         'user_id',
         'number',
         'is_win',
-        'win_amount'
+        'win_amount',
     ];
 
     public function user(): BelongsTo

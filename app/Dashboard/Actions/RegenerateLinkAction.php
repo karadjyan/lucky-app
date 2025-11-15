@@ -11,7 +11,7 @@ final readonly class RegenerateLinkAction
     public function __construct(
         private UserLinkRepositoryInterface $userLinkRepository,
         private UserLinkFactory $userLinkFactory
-    ){}
+    ) {}
 
     public function execute(string $token)
     {

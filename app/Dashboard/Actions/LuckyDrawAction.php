@@ -15,7 +15,7 @@ final readonly class LuckyDrawAction
         private UserLinkRepositoryInterface $userLinkRepository,
         private UserDrawRepositoryInterface $userDrawRepository,
         private LuckyService $luckyService,
-    ){}
+    ) {}
 
     public function execute(string $token): DrawResult
     {

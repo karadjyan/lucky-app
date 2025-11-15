@@ -11,7 +11,7 @@ class TokenMiddleware
 {
     public function __construct(
         private UserLinkRepositoryInterface $userLinkRepository
-    ){}
+    ) {}
 
     public function handle(Request $request, Closure $next)
     {

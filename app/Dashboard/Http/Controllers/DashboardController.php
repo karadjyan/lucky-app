@@ -39,7 +39,7 @@ class DashboardController
     public function history(DrawHistoryQuery $query)
     {
         return view('history', [
-            'draws' => $query->fetch(new DrawHistoryCriteria(request()->route('token')))
+            'draws' => $query->fetch(new DrawHistoryCriteria(request()->route('token'))),
         ]);
     }
 }

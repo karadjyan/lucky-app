@@ -16,7 +16,7 @@ final readonly class CreateUserAction
         private UserRepositoryInterface $userRepository,
         private UserLinkRepositoryInterface $userLinkRepository,
         private UserLinkFactory $userLinkFactory
-    ){}
+    ) {}
 
     public function execute(UserDto $dto): UserLinkDto
     {

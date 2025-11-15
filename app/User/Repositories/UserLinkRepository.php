@@ -30,7 +30,7 @@ class UserLinkRepository implements UserLinkRepositoryInterface
     public function deactivateByToken(string $token): bool
     {
         return UserLink::query()->where('token', $token)->update([
-            'is_active' => false
+            'is_active' => false,
         ]);
     }
 }

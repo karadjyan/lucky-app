@@ -9,5 +9,5 @@ class UserLinkDto
         public string $token,
         public string $expiresAt,
         public bool $isActive,
-    ){}
+    ) {}
 }

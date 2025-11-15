@@ -17,8 +17,8 @@ class RegisterRequest extends FormRequest
             'phone' => [
                 'required',
                 'string',
-                'numeric'
-            ]
+                'numeric',
+            ],
         ];
     }
 }
